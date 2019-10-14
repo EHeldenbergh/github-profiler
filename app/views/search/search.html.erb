@@ -1,0 +1,26 @@
+
+<div class="text-center">
+  <h1>Enter a GitHub username to start searching</h1>
+</div>
+
+<br>
+
+<%= form_tag '/search' do %>
+
+<div class="form-group">
+  <%= label_tag(:username, "User searched on GitHub: ") %>
+  <%= text_field_tag :username, "", placeholder: 'Eg: octocat', class: 'form-control', id: 'username' %>
+</div>
+
+<div class="form-group">
+  <%= submit_tag "Search", class: 'btn btn-warning', id: 'search' %>
+</div>
+
+<script>
+  function send(name) {
+      $("#username").val(name);
+      $("#search").click();
+  }
+</script>
+
+<% end %>

@@ -1,0 +1,34 @@
+
+<h1 class="text-center">Global GitHub user information</h1>
+
+<hr>
+
+<div>
+  <h2>User's personal information</h2>
+  <p>
+    <%= image_tag @user_info["avatar_url"], width: 400, height: 400, style: 'display:inline' %><br>
+    Username: <%= @user_info["login"] %><br>
+    Name: <%= @user_info["name"] %><br>
+    Company: <%= @user_info["company"] %><br>
+    Location: <%= @user_info["location"] %><br>
+    E-mail: <%= @user_info["email"] %><br>
+    Looking for a job ?: <%= @user_info["hireable"] %><br>
+    Biography: <%= @user_info["bio"] %><br>
+    Followers: <%= @user_info["followers"] %><br>
+    Following: <%= @user_info["following"] %><br>
+  </p>
+</div>
+
+<hr>
+
+<div>
+  <h2>User's repositories information</h2>
+  <p>
+    <% @users_repositories.each do |repo| %>
+      Name: <%= repo["name"] %> <br>
+      Description: <%= repo["description"] %> <br>
+      Watchers: <%= repo["watchers_count"] %> <br>
+      <br>
+    <% end %>
+  </p>
+</div>

@@ -1,1 +1,1 @@
-github-profiler
+github-user-profiler

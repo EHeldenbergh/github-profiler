@@ -1,0 +1,2470 @@
+
+
+Started GET "/" for ::1 at 2019-09-20 11:47:04 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.10) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.10) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.10) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.10) lib/active_record/railtie.rb:122:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.10) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.10) lib/active_record/base.rb:26:in `<top (required)>'
+  activesupport (4.2.10) lib/active_support/dependencies.rb:274:in `require'
+  activesupport (4.2.10) lib/active_support/dependencies.rb:274:in `block in require'
+  activesupport (4.2.10) lib/active_support/dependencies.rb:240:in `load_dependency'
+  activesupport (4.2.10) lib/active_support/dependencies.rb:274:in `require'
+  activerecord (4.2.10) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.10) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (165.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (112.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (250.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-20 11:50:47 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.10) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.10) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.10) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.10) lib/active_record/railtie.rb:122:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.10) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.10) lib/active_record/base.rb:26:in `<top (required)>'
+  activesupport (4.2.10) lib/active_support/dependencies.rb:274:in `require'
+  activesupport (4.2.10) lib/active_support/dependencies.rb:274:in `block in require'
+  activesupport (4.2.10) lib/active_support/dependencies.rb:240:in `load_dependency'
+  activesupport (4.2.10) lib/active_support/dependencies.rb:274:in `require'
+  activerecord (4.2.10) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.10) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (244.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (193.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (504.1ms)
+
+
+Started GET "/" for ::1 at 2019-09-20 11:52:54 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.10) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.10) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.10) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.10) lib/active_record/railtie.rb:122:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.10) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.10) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.10) lib/active_record/base.rb:26:in `<top (required)>'
+  activesupport (4.2.10) lib/active_support/dependencies.rb:274:in `require'
+  activesupport (4.2.10) lib/active_support/dependencies.rb:274:in `block in require'
+  activesupport (4.2.10) lib/active_support/dependencies.rb:240:in `load_dependency'
+  activesupport (4.2.10) lib/active_support/dependencies.rb:274:in `require'
+  activerecord (4.2.10) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.10) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (109.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (96.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (215.1ms)
+
+
+Started GET "/" for ::1 at 2019-09-20 11:55:25 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 27ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-20 11:57:44 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
+Completed 200 OK in 20ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/home" for ::1 at 2019-09-20 11:57:48 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1221ms (Views: 1220.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-20 11:57:50 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-09-20 11:57:50 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-09-20 11:57:50 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-20 11:57:50 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-09-20 11:57:50 +0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-20 11:57:50 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-09-20 11:57:50 +0200
+
+
+Started GET "/home" for ::1 at 2019-09-20 11:58:34 +0200
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (160.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (96.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (218.5ms)
+
+
+Started GET "/home/" for ::1 at 2019-09-20 11:58:38 +0200
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (123.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (92.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (197.5ms)
+
+
+Started GET "/pages/home" for ::1 at 2019-09-20 12:00:08 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 241ms (Views: 232.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-20 12:00:09 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-09-20 12:00:09 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-20 12:00:09 +0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-20 12:00:09 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-09-20 12:00:09 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-09-20 12:00:09 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-09-20 12:00:09 +0200
+
+
+Started GET "/git_search" for ::1 at 2019-09-20 12:04:15 +0200
+
+ActionController::RoutingError (No route matches [GET] "/git_search"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (87.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (205.2ms)
+
+
+Started GET "/home" for ::1 at 2019-09-20 12:19:26 +0200
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (125.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (197.1ms)
+
+
+Started GET "/pages:home" for ::1 at 2019-09-20 12:20:17 +0200
+
+ActionController::RoutingError (No route matches [GET] "/pages:home"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (105.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (110.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (260.4ms)
+
+
+Started GET "/pages/home" for ::1 at 2019-09-20 12:20:21 +0200
+
+ActionController::RoutingError (No route matches [GET] "/pages/home"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (89.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (179.1ms)
+
+
+Started GET "/home" for ::1 at 2019-09-20 12:22:37 +0200
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (156.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (81.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (183.1ms)
+
+
+Started GET "/" for ::1 at 2019-09-20 12:23:47 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 375ms (Views: 374.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-20 12:23:48 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-20 12:23:48 +0200
+
+
+Started GET "/" for ::1 at 2019-09-20 12:24:29 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 241ms (Views: 232.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-20 12:24:29 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-09-20 12:24:29 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-09-20 12:24:29 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-09-20 12:24:29 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-20 12:24:29 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-20 12:24:29 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-09-20 12:24:29 +0200
+
+
+Started GET "/" for ::1 at 2019-09-22 13:26:13 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (26.1ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `coupons_path' for #<#<Class:0x00007f86ed1fc310>:0x00007f86ed1eedc8>):
+    1: <h1>Welcome to my project</h1>
+    2: 
+    3: <%= form_tag(coupons_path) do %>
+    4:   Store <%= text_field_tag :store %>
+    5: <%= submit_tag 'Search' %>
+    6: <% end %>
+  app/views/home/home.html.erb:3:in `_app_views_home_home_html_erb___2785823641901796016_70108740173280'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (105.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (235.2ms)
+
+
+Started GET "/" for ::1 at 2019-09-22 13:31:27 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 325ms (Views: 316.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:31:27 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-09-22 13:31:27 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-09-22 13:31:27 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-22 13:31:27 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:31:27 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-09-22 13:31:27 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-09-22 13:31:27 +0200
+
+
+Started GET "/" for ::1 at 2019-09-22 13:31:47 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 274ms (Views: 266.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:31:47 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-22 13:31:47 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-09-22 13:31:47 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:31:47 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-09-22 13:31:47 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-09-22 13:31:47 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-09-22 13:31:47 +0200
+
+
+Started GET "/" for ::1 at 2019-09-22 13:31:48 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:31:49 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-22 13:31:49 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-09-22 13:31:49 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-09-22 13:31:49 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:31:49 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-09-22 13:31:49 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-09-22 13:31:49 +0200
+
+
+Started GET "/" for ::1 at 2019-09-22 13:31:53 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:31:53 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-09-22 13:31:53 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-09-22 13:31:53 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:31:53 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-22 13:31:53 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-09-22 13:31:53 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-09-22 13:31:53 +0200
+
+
+Started GET "/" for ::1 at 2019-09-22 13:34:23 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 258ms (Views: 249.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:34:23 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-22 13:34:23 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-09-22 13:34:23 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-09-22 13:34:23 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:34:23 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-09-22 13:34:23 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-09-22 13:34:23 +0200
+
+
+Started GET "/search" for ::1 at 2019-09-22 13:34:25 +0200
+
+ActionController::RoutingError (No route matches [GET] "/search"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (131.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (85.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (184.5ms)
+
+
+Started GET "/" for ::1 at 2019-09-22 13:35:03 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 248ms (Views: 239.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:35:03 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-22 13:35:03 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-09-22 13:35:03 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-09-22 13:35:03 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:35:03 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-09-22 13:35:03 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-09-22 13:35:03 +0200
+
+
+Started GET "/" for ::1 at 2019-09-22 13:43:31 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 402ms (Views: 393.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:43:32 +0200
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:43:32 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-09-22 13:43:32 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-22 13:43:32 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-09-22 13:43:32 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-09-22 13:43:32 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:43:32 +0200
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:43:32 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-09-22 13:43:32 +0200
+
+
+Started GET "/search" for ::1 at 2019-09-22 13:43:33 +0200
+
+ActionController::RoutingError (No route matches [GET] "/search"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (141.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (170.7ms)
+
+
+Started GET "/search" for ::1 at 2019-09-22 13:44:30 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 251ms (Views: 241.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:44:30 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-22 13:44:30 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-09-22 13:44:30 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-09-22 13:44:30 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-09-22 13:44:30 +0200
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:44:30 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:44:30 +0200
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:44:30 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-09-22 13:44:30 +0200
+
+
+Started GET "/" for ::1 at 2019-09-22 13:49:14 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-22 13:49:20 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 299ms (Views: 290.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:49:20 +0200
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:49:20 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-09-22 13:49:20 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-22 13:49:20 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-09-22 13:49:20 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-09-22 13:49:20 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:49:20 +0200
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:49:20 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-09-22 13:49:20 +0200
+
+
+Started GET "/search" for ::1 at 2019-09-22 13:49:23 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-09-22 13:49:27 +0200
+
+ActionController::RoutingError (No route matches [POST] "/search"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (164.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (97.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (216.6ms)
+
+
+Started GET "/search" for ::1 at 2019-09-22 13:51:03 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 272ms (Views: 263.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:51:04 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-22 13:51:04 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-09-22 13:51:04 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-09-22 13:51:04 +0200
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-09-22 13:51:04 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-09-22 13:51:04 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:51:04 +0200
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-09-22 13:51:04 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-09-22 13:51:04 +0200
+
+
+Started POST "/search" for ::1 at 2019-09-22 13:51:08 +0200
+
+ActionController::RoutingError (No route matches [POST] "/search"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (134.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (98.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (221.6ms)
+
+
+Started GET "/home" for ::1 at 2019-09-24 11:06:40 +0200
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (159.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (98.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (210.7ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 11:06:47 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 308ms (Views: 307.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-09-24 11:06:49 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-09-24 11:06:51 +0200
+
+ActionController::RoutingError (No route matches [POST] "/search"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (139.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (98.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (214.1ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 11:20:39 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 310ms (Views: 299.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-09-24 11:20:41 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-09-24 11:20:42 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qkp9G3H8W9y8uC+0otU62h2mcjyANusb2Vj6D+qekpXRxpY+HloBn9DovCXt9lundLCskCYmx3N53nX0sHMkrg==", "username"=>"", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    3: 
+    4: <div>
+    5:   <h2>Global user information</h2>
+    6:   <%= image_tag @user_info["avatar_url"] %>
+    7:   <p>
+    8:     Username: <%= @user_info["login"] %>
+    9:     Name: <%= @user_info["name"] %>
+  app/views/search/results.html.erb:6:in `_app_views_search_results_html_erb___3529560318415411843_70189656772740'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (114.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (102.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (235.9ms)
+
+
+Started POST "/search" for ::1 at 2019-09-24 11:22:10 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qkp9G3H8W9y8uC+0otU62h2mcjyANusb2Vj6D+qekpXRxpY+HloBn9DovCXt9lundLCskCYmx3N53nX0sHMkrg==", "username"=>"", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    3: 
+    4: <div>
+    5:   <h2>Global user information</h2>
+    6:   <img src="<%= @user_info["avatar_url"]%>">
+    7:   <p>
+    8:     Username: <%= @user_info["login"] %>
+    9:     Name: <%= @user_info["name"] %>
+  app/views/search/results.html.erb:6:in `_app_views_search_results_html_erb__4072911624958881104_70150449708180'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (93.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (190.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 11:22:14 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 244ms (Views: 243.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-09-24 11:22:17 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-09-24 11:22:17 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xp3aj88Y2MwEsWFbye7Kg7RZXWsBEw4kBlblYlK5UVzNETGqoL6Cj2jh8sqGzav+3U+Dx6cDIkym0GqZCFTnZw==", "username"=>"", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    3: 
+    4: <div>
+    5:   <h2>Global user information</h2>
+    6:   <img src="<%= @user_info["avatar_url"]%>">
+    7:   <p>
+    8:     Username: <%= @user_info["login"] %>
+    9:     Name: <%= @user_info["name"] %>
+  app/views/search/results.html.erb:6:in `_app_views_search_results_html_erb__4072911624958881104_70150449708180'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (96.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (206.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-24 11:23:26 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 276ms (Views: 267.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-24 11:23:28 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-24 11:23:30 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UAFckVKpne8kd9EqcCxiUVsI502AWa91YRkGnWo0pCnDjbe0PQ/HrEgnQrs/DwMsMh454SZJgx3Bn4lmMNkSEg==", "username"=>"", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    3: 
+    4: <div>
+    5:   <h2>Global user information</h2>
+    6:   <!--<img src="<%= @user_info["avatar_url"]%>">!-->
+    7:   <p>
+    8:     Username: <%= @user_info["login"] %>
+    9:     Name: <%= @user_info["name"] %>
+  app/views/search/results.html.erb:6:in `_app_views_search_results_html_erb__299381551121665592_70202638765060'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (112.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (234.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-24 11:23:46 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-24 11:23:47 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-24 11:23:54 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m4fX44rQu5lsoM0TGamfmsrjxWRKNod7wZpRIjPBhyUICzzG5Xbh2gDwXoJWiv7no/UbyOwmqxNhHN7ZaSwxHg==", "username"=>"EHeldenbergh", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    4: <div>
+    5:   <h2>Global user information</h2>
+    6:   <p>
+    7:     Username: <%= @user_info["login"] %>
+    8:     Name: <%= @user_info["name"] %>
+    9:     Company: <%= @user_info["company"] %>
+   10:     Location: <%= @user_info["location"] %>
+  app/views/search/results.html.erb:7:in `_app_views_search_results_html_erb__299381551121665592_70202610848880'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (93.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (200.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-24 11:24:51 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 265ms (Views: 256.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-24 11:24:52 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-24 11:24:56 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yyxXaKuGAtGzobYGxvSghXtsQH1jQHU4UtmmFqSRfxBYoLxNxCBYkt/xJZeJ18H4Enqe0cVQWVDyXynt/nzJKw==", "username"=>"EHeldenbergh", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    4: <div>
+    5:   <h2>Global user information</h2>
+    6:   <p>
+    7:     Username: <%= @user_info["login"] %>
+    8:     Name: <%= @user_info["name"] %>
+    9:     Company: <%= @user_info["company"] %>
+   10:     Location: <%= @user_info["location"] %>
+  app/views/search/results.html.erb:7:in `_app_views_search_results_html_erb___1840021779983816302_70179802439440'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (205.5ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-24 11:27:53 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 286ms (Views: 276.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-24 11:27:59 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x+0cxpOvWu1WShUCqOYeOhPkpSSbOvF/boz53WHAbMdUYffj/AkArjoahpPnxX9HevJ7iD0q3RfOCnYmOy3a/A==", "username"=>"EHeldenbergh", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    4: <div>
+    5:   <h2>Global user information</h2>
+    6:   <p>
+    7:     Username: <%= @user_info["login"] %>
+    8:     Name: <%= @user_info["name"] %>
+    9:     Company: <%= @user_info["company"] %>
+   10:     Location: <%= @user_info["location"] %>
+  app/views/search/results.html.erb:7:in `_app_views_search_results_html_erb___273843416188324068_70248600755500'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (108.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (206.3ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-24 11:33:04 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 247ms (Views: 237.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-24 11:33:08 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TeyS9dnIYyvfV0akNUQjnOybhRDyfQlvapPE/0qjmdfeYHnQtm45aLMH1TV6Z0LhhY1bvFRtJQfKFUsEEE4v7A==", "username"=>"EHeldenbergh", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    4: <div>
+    5:   <h2>Global user information</h2>
+    6:   <p>
+    7:     Username: <%= @user_info["login"] %>
+    8:     Name: <%= @user_info["name"] %>
+    9:     Company: <%= @user_info["company"] %>
+   10:     Location: <%= @user_info["location"] %>
+  app/views/search/results.html.erb:7:in `_app_views_search_results_html_erb___2953897037002600258_70119572606900'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (195.9ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-24 11:35:29 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 278ms (Views: 269.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-24 11:35:33 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"POzio97zLDFDym9T9/82M+4K7RDSOcK0l2pxwIhXQ5mvYAmGsVV2ci+a/MK43FdOhxwzvHQp7tw37P470rr1og==", "username"=>"EHeldenbergh", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    2: <div>
+    3:   <h2>Global user information</h2>
+    4:   <p>
+    5:     Username: <%= @user_info["login"] %>
+    6:     Name: <%= @user_info["name"] %>
+    7:     Company: <%= @user_info["company"] %>
+    8:     Location: <%= @user_info["location"] %>
+  app/views/search/results.html.erb:5:in `_app_views_search_results_html_erb__2072945162606988640_70159104326780'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (136.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (94.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (213.9ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-24 11:38:01 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 293ms (Views: 284.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-24 11:38:05 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8qP2sFmVR+A+r30QwIwsnffc0+2D2uiv1epn5GTkjbJhLx2VNjMdo1L/7oGPr03gnsoNQSXKxMd1bOgfPgk7iQ==", "username"=>"EHeldenbergh", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    2: <div>
+    3:   <h2>Global user information</h2>
+    4:   <p>
+    5:     Username: <%= @user_info["login"] %>
+    6:     Name: <%= @user_info["name"] %>
+    7:     Company: <%= @user_info["company"] %>
+    8:     Location: <%= @user_info["location"] %>
+  app/views/search/results.html.erb:5:in `_app_views_search_results_html_erb___3726878479388708928_70154178419580'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (98.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (206.6ms)
+
+
+Started PUT "/__web_console/repl_sessions/0e4fb556a0b0238c779d0b175c34ea42" for 127.0.0.1 at 2019-09-24 11:38:29 +0200
+
+
+Started PUT "/__web_console/repl_sessions/0e4fb556a0b0238c779d0b175c34ea42" for 127.0.0.1 at 2019-09-24 11:38:39 +0200
+
+
+Started PUT "/__web_console/repl_sessions/0e4fb556a0b0238c779d0b175c34ea42" for 127.0.0.1 at 2019-09-24 11:38:45 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-24 12:08:59 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 255ms (Views: 246.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-24 12:09:01 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-24 12:09:05 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qSkS3/l+5eN00G70G9bBuy3Gf27buU8UEvxLCh8Jo/s6pfn6lti/oBiA/WVU9aDGRNChwn2pY3yyesTxReQVwA==", "username"=>"EHeldenbergh", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 480ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-24 12:13:09 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 247ms (Views: 237.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2019-09-24 12:13:10 +0200
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2019-09-24 12:13:10 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2019-09-24 12:13:10 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2019-09-24 12:13:10 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2019-09-24 12:13:10 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2019-09-24 12:13:10 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2019-09-24 12:13:10 +0200
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2019-09-24 12:13:10 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2019-09-24 12:13:10 +0200
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-24 12:13:13 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NzEFKCv5B/0jKAzbIV7XyXzYDjbRZ3BapR8Fo/vD59ykve4NRF9dvk94n0pufba0Fc7Qmnd3XDIFmYpYoS5R5w==", "username"=>"EHeldenbergh", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 452ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-24 12:13:19 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2019-09-24 12:13:19 +0200
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2019-09-24 12:13:19 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2019-09-24 12:13:19 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2019-09-24 12:13:19 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2019-09-24 12:13:19 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2019-09-24 12:13:19 +0200
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2019-09-24 12:13:19 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2019-09-24 12:13:19 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2019-09-24 12:13:19 +0200
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-24 12:13:23 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fYBsF84I/L6xRL5BvFIcMAlK/PXEHQL+vtq77gUm4lPuDIcyoa6m/d0ULdDzcX1NYFwiWWINLpYeXDQVX8tUaA==", "username"=>"TheoVauvilliers", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 767ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-24 12:14:00 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 238ms (Views: 229.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-24 12:14:05 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dQqrJnezzJfuNbuDN316/aKtshgg1nqrDhz/taS0B/fmhkADGBWW1IJlKBJ4XhuAy7tstIbGVsOumnBO/lmxzA==", "username"=>"octocat", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 842ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-27 10:20:35 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 347ms (Views: 338.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-27 10:20:39 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-27 10:20:45 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iijsmwfYfl7YN93MxCmyh3MesqRu4cMSr/3qjWAUdoIZpAe+aH4kHbRnTl2LCtP6GghsCMjx73oPe2V2OvnAuQ==", "username"=>"fskfjqoroqjfqf", "commit"=>"Search"}
+Redirected to http://localhost:3000/search
+Completed 500 Internal Server Error in 582ms (ActiveRecord: 0.0ms)
+
+ArgumentError (bad argument (expected URI object or URI string)):
+  app/controllers/search_controller.rb:43:in `get_response_from_url'
+  app/controllers/search_controller.rb:57:in `get_user_repositories'
+  app/controllers/search_controller.rb:20:in `results'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (110.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (92.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (207.2ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-27 10:23:08 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 269ms (Views: 259.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-27 10:23:15 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x3N67Jv/shRFydPd822TkglZexl+473k+r/8H0Bf1OlU/5HJ9FnoVymZQEy8TvLvYE+ltdjzkYxaOXPkGrJi0g==", "username"=>"fdsfucjqsjrsjfq", "commit"=>"Search"}
+Redirected to http://localhost:3000/search
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 0.0ms)
+
+ArgumentError (bad argument (expected URI object or URI string)):
+  app/controllers/search_controller.rb:44:in `get_response_from_url'
+  app/controllers/search_controller.rb:58:in `get_user_repositories'
+  app/controllers/search_controller.rb:20:in `results'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (86.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (205.8ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-27 10:24:25 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-27 10:24:30 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"06bFS10/U+5cx9Srr/Eq3i/TtFuGivpGKqVQQOU5vGpAKi5uMpkJrTCXRzrg0kujRsVq9yCa1i6KI9+7v9QKUQ==", "username"=>"cocé", "commit"=>"Search"}
+Redirected to http://localhost:3000/search
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+URI::InvalidURIError (URI must be ascii only "https://api.github.com/users/coc\u00E9"):
+  app/controllers/search_controller.rb:44:in `get_response_from_url'
+  app/controllers/search_controller.rb:52:in `get_user_info'
+  app/controllers/search_controller.rb:14:in `results'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (192.4ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-27 10:25:28 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 259ms (Views: 249.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-27 10:25:31 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kh5GifK+iilkFjyiG1ebyVQlXG9n93ksTKHwbEqgnsG5kq2snRjQaghGrzNUdPq0PTOCw8HnVUTsJ3+XEE0o+g==", "username"=>"oé", "commit"=>"Search"}
+Redirected to http://localhost:3000/search
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+URI::InvalidURIError (URI must be ascii only "https://api.github.com/users/o\u00E9"):
+  app/controllers/search_controller.rb:45:in `get_response_from_url'
+  app/controllers/search_controller.rb:53:in `get_user_info'
+  app/controllers/search_controller.rb:14:in `results'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (121.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (99.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (233.3ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-27 10:32:31 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 352ms (Views: 342.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-27 10:32:38 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OkryZK2IffKy01jC1twvsf8iJ/MIQMQyKNeFvnLqrzmpxhlBwi4nsd6Dy1OZ/07MljT5X65Q6FqIUQpFKAcZAg==", "username"=>"fjqsfuqsucqsjr", "commit"=>"Search"}
+Redirected to http://localhost:3000/search
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 0.0ms)
+
+ArgumentError (bad argument (expected URI object or URI string)):
+  app/controllers/search_controller.rb:44:in `get_response_from_url'
+  app/controllers/search_controller.rb:60:in `get_user_repositories'
+  app/controllers/search_controller.rb:21:in `results'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (115.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (90.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (203.6ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-27 10:42:54 +0200
+
+SyntaxError (/Users/elliott/Desktop/moodwork/git-user-profil/app/controllers/search_controller.rb:35: syntax error, unexpected keyword_end
+  end
+     ^
+/Users/elliott/Desktop/moodwork/git-user-profil/app/controllers/search_controller.rb:74: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/search_controller.rb:35: syntax error, unexpected keyword_end
+  app/controllers/search_controller.rb:74: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.1ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (138.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (111.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (236.6ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-27 10:43:09 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 342ms (Views: 333.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-27 10:43:44 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GRYhoBzLAd1tSpVeILkuZ8ekfhPI0vZakmCO4QGN6RKKmsqFc21bngEaBs9vmk8arrKgv27C2jIy5gEaW2BfKQ==", "username"=>"qsjdqsjcjq", "commit"=>"Search"}
+Redirected to 
+Completed 500 Internal Server Error in 235ms (ActiveRecord: 0.0ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"search"}):
+  app/controllers/search_controller.rb:34:in `error_handling'
+  app/controllers/search_controller.rb:18:in `results'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (173.7ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-27 10:45:15 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 297ms (Views: 287.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-27 10:45:17 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NgF+Dr3gDQ4uHasEp9owS4qfEZqhKOg+C1YWv4MDIk2ljZUr0kZXTUJNOJXo+VE244nPNgc4xFar0JlE2e6Udg==", "username"=>"dsqkckqsfqjs", "commit"=>"Search"}
+Redirected to http://localhost:3000/search
+Completed 500 Internal Server Error in 207ms (ActiveRecord: 0.0ms)
+
+ArgumentError (bad argument (expected URI object or URI string)):
+  app/controllers/search_controller.rb:44:in `get_response_from_url'
+  app/controllers/search_controller.rb:60:in `get_user_repositories'
+  app/controllers/search_controller.rb:21:in `results'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (109.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (212.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-27 10:45:38 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 263ms (Views: 254.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-27 10:45:42 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lSIkR2V97/VuJUj1rM31NzsCW/4Ug/xm3FC/g09fBjkGrs9iCtu1tgJ122Tj7pRKUhSFUrKT0A581jB4FbKwAg==", "username"=>"dsqkcqfqhfhqd", "commit"=>"Search"}
+Redirected to 
+Completed 500 Internal Server Error in 297ms (ActiveRecord: 0.0ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"index", :controller=>"home"}):
+  app/controllers/search_controller.rb:34:in `error_handling'
+  app/controllers/search_controller.rb:18:in `results'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.8ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (187.8ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-09-27 10:46:09 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 250ms (Views: 241.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-09-27 10:46:12 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91CIjW8VptfozFTuqauYB3gLZ53voZqqYkHgPYWae19k3GOoALP8lIScx3/miPl6ER25MUmxtsLCx2/G33fNZA==", "username"=>"dksiqsudjqshdqsd", "commit"=>"Search"}
+Redirected to http://localhost:3000home
+Completed 500 Internal Server Error in 617ms (ActiveRecord: 0.0ms)
+
+ArgumentError (bad argument (expected URI object or URI string)):
+  app/controllers/search_controller.rb:44:in `get_response_from_url'
+  app/controllers/search_controller.rb:60:in `get_user_repositories'
+  app/controllers/search_controller.rb:21:in `results'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.0ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (94.7ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (208.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-12 19:49:45 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 334ms (Views: 324.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-10-12 19:49:46 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-10-12 19:49:46 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-10-12 19:49:46 +0200
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-10-12 19:49:46 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-10-12 19:49:46 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-10-12 19:49:46 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-10-12 19:49:46 +0200
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-10-12 19:49:46 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-10-12 19:49:46 +0200
+
+
+Started GET "/search" for ::1 at 2019-10-12 19:49:48 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-10-12 19:49:52 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"URxeRZDCTzbLdn6gW1L1RitxlyX2V+0bfureD+NF9lY5gShZiobB+d24g6QPOeUE8u2BFHwi0wniz9t0kogA0g==", "username"=>"EHeldenbergh", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 12642ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-10-12 19:50:04 +0200
+
+
+Started GET "/" for ::1 at 2019-10-12 19:52:37 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 433ms (Views: 423.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-10-12 19:52:38 +0200
+
+
+Started GET "/search" for ::1 at 2019-10-12 19:53:06 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-10-12 19:53:10 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dbt4QmS07rjK1Fn/rmlu+x3VA3cRNSul+etqV+0BZuQdJg5efvBgd9wapPv6An65xEkVRptAFbdlzm8snMyQYA==", "username"=>"octocat", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 12679ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-10-12 19:55:26 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 329ms (Views: 316.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-10-12 19:55:30 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36k+sJc1rlAgBpkMQ34Qh8wwzPuviA5KDOxUsvURGVC3NEisjXEgnzbIZAgXFQDFFazayiX9MFiQyVHJhNzv1A==", "username"=>"octocat", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16795ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 16:46:47 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 322ms (Views: 312.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-10-14 16:46:50 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-10-14 16:46:54 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bd61YLFv9qndqTtnr05SnmEMEK2RvIDm6BIzTE0RzGAFQ8N8qyt4ZstnxmP7JULcuJAGnBvJvvR0NzY3PNw65A==", "username"=>"octocat", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 547ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 16:56:11 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 271ms (Views: 263.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-10-14 16:56:13 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-10-14 16:56:16 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O9dKmr09D2Q2GeFHZLSqwpnMrqKiyPbRNaHWQ9HsLuxTSjyGp3mBqyDXHEMw37qAQFC4kyi9yMOphNM4oCHYaA==", "username"=>"octocat", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (51.1ms)
+Completed 500 Internal Server Error in 654ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `users_repositories' for #<#<Class:0x00007f9ceac5f808>:0x00007f9ce9b70bf0>
+Did you mean?  @users_repositories):
+    25: <div>
+    26:   <h2>User's repositories information</h2>
+    27:   <p>
+    28:     <% users_repositories.each do |repo| %>
+    29:       <%= repo["name"] %> <br>
+    30:     <% end %>
+    31:   </p>
+  app/views/search/results.html.erb:28:in `_app_views_search_results_html_erb__934316499186726624_70155965298260'
+
+
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (107.6ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/elliott/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (226.6ms)
+
+
+Started POST "/search" for ::1 at 2019-10-14 16:56:34 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O9dKmr09D2Q2GeFHZLSqwpnMrqKiyPbRNaHWQ9HsLuxTSjyGp3mBqyDXHEMw37qAQFC4kyi9yMOphNM4oCHYaA==", "username"=>"octocat", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1088ms (Views: 283.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-10-14 16:56:35 +0200
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-10-14 16:56:35 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-10-14 16:56:35 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-10-14 16:56:35 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-10-14 16:56:35 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-10-14 16:56:35 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-10-14 16:56:35 +0200
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-10-14 16:56:35 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-10-14 16:56:35 +0200
+
+
+Started GET "/search" for ::1 at 2019-10-14 16:59:29 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 303ms (Views: 292.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-10-14 16:59:29 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-10-14 16:59:29 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-10-14 16:59:29 +0200
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-10-14 16:59:29 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-10-14 16:59:29 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-10-14 16:59:29 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-10-14 16:59:29 +0200
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-10-14 16:59:29 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-10-14 16:59:29 +0200
+
+
+Started POST "/search" for ::1 at 2019-10-14 16:59:32 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UHrU+PElI/9LaD298S0f1YUosOARcd2irtwOgwpF/Nc456Lk62GtMF2mwLmlRg+XXLSm0ZsE47Ay+Qv4e4gKUw==", "username"=>"octocat", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 765ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-10-14 17:03:34 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 293ms (Views: 277.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-10-14 17:03:35 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2019-10-14 17:03:35 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-10-14 17:03:35 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-10-14 17:03:35 +0200
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2019-10-14 17:03:35 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-10-14 17:03:35 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-10-14 17:03:35 +0200
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2019-10-14 17:03:35 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2019-10-14 17:03:35 +0200
+
+
+Started POST "/search" for ::1 at 2019-10-14 17:03:37 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSz/Ftr/UEbN1AkTy2nRFi6E5oFSPlP502N8z1wf867hsYkKwLveidsa9BefAsFU9xjwsNhLbetPRnm0LdIFKg==", "username"=>"octocat", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 501ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-10-14 17:04:22 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 318ms (Views: 309.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-10-14 17:04:25 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vmYrRMXNDMbDwa921RYFkd+dffqtSeZq/Y7Un9FqCXzW+11Y34mCCdUPUnKBfRXTBgFryyc82Hhhq9HkoKf/+A==", "username"=>"octocat", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 782ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-10-14 17:05:48 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 294ms (Views: 284.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2019-10-14 17:05:49 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2019-10-14 17:05:49 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2019-10-14 17:05:49 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2019-10-14 17:05:49 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2019-10-14 17:05:49 +0200
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2019-10-14 17:05:49 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2019-10-14 17:05:49 +0200
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2019-10-14 17:05:49 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2019-10-14 17:05:49 +0200
+
+
+Started POST "/search" for 127.0.0.1 at 2019-10-14 17:05:51 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"trebL7/NPU+/oae7hlfqmE+RZAJ5/FJJ6s4cD+WAi63eKu0zpYmzgKlvWr/SPPralg1yM/OJbFt26xl0lE19KQ==", "username"=>"octocat", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 799ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-10-14 17:07:29 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 300ms (Views: 286.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2019-10-14 17:07:30 +0200
+
+
+Started GET "/assets/search.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2019-10-14 17:07:30 +0200
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2019-10-14 17:07:30 +0200
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2019-10-14 17:07:30 +0200
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2019-10-14 17:07:30 +0200
+
+
+Started GET "/assets/search.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2019-10-14 17:07:31 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2019-10-14 17:07:31 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2019-10-14 17:07:31 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2019-10-14 17:07:31 +0200
+
+
+Started POST "/search" for 127.0.0.1 at 2019-10-14 17:07:34 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b3ooIDz4FI0Xr22AxyRPS+ahFsyiIISqR+eq3UwumaYH5148JryaQgFhkISTT18JPz0A/ShVurjbwq+mPeNvIg==", "username"=>"octocat", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 876ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 17:24:37 +0200
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 57ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-10-14 17:24:39 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-10-14 17:24:42 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2TvXOCeHhiH5VJ0zyDFZhO//cOTtVKVHJIngmXcB+5LnSi6p3HEGPteAy6/KaltGb2PhmaB7l73acmtvbo4C3w==", "username"=>"octocat", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 792ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-10-14 17:34:14 +0200
+Processing by SearchController#search as HTML
+  Rendered search/search.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 581ms (Views: 570.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-10-14 17:34:18 +0200
+Processing by SearchController#results as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dwYtltqe446RENmYV8uOroQ2NtKrGOoS2g3Fi9eQ6gFJd9QHIWhjkb/EjwRVkIxsBKqnr+Y32Ogk9k59zh8TTA==", "username"=>"octocat", "commit"=>"Search"}
+  Rendered search/results.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 765ms (Views: 34.1ms | ActiveRecord: 0.0ms)

@@ -1,3 +1,5 @@
 .idea
 .generators
 .rakeTasks
+log
+tmp

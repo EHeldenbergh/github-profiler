@@ -10,10 +10,22 @@ Then, his repositories sorted by watcher count in decreasing order.
 * Ruby 2.4.4
 * Rails 4.2.10
 
+Realised on MacOS Mojave 10.14.3
+
 ## Gem versions
 
 * Bundler 1.17.3
 * Bootstrap 3.3.6
+
+## How to use it
+
+First, download or clone the repository.
+Open your terminal and enter the repository.
+
+Run `gem install bundler` if you do not have bundler installed.
+Then run `bundle install` to install all dependencies and packages.
+
+You should now be able to run `rails server` and navigate to `localhost:3000/` to test the project.
 
 ## Project features
 
